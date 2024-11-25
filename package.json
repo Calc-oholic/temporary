@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "build": "powershell -Command \"Remove-Item -Path public -Recurse -ErrorAction SilentlyContinue; New-Item -ItemType Directory -Path public; Copy-Item -Path src\\pages\\* -Destination public -Recurse; Copy-Item -Path index.html -Destination public; Copy-Item -Path src\\css -Destination public -Recurse; Copy-Item -Path src\\js -Destination public -Recurse\""
+  }
+}
