@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - AI Stock Prediction Platform</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/netlify-identity-widget@1.9.0/build/netlify-identity.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="../index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <button onclick="netlifyIdentity.open()" class="btn">Log In</button>
+            <button onclick="netlifyIdentity.open('signup')" class="btn">Sign Up</button>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section id="contact">
+            <h1>Contact Us</h1>
+            <form>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+
+            <section id="contact-info">
+                <h2>Additional Contact Information</h2>
+                <p>Email: support@aistockpredictor.com</p>
+                <p>Phone: (555) 123-4567</p>
+                <p>Address: 123 AI Innovation Drive, Tech City, ST 12345</p>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 AI Stock Prediction Platform. All rights reserved.</p>
+    </footer>
+</body>
+</html>
